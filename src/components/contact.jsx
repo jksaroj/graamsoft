@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import emailConfig from "../config/config";
 
 const initialState = {
   name: "",
@@ -9,6 +10,8 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [isSending, setIsSending] = useState(false);
+  const [emailResponseMessage, setEmailResponseMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,24 +21,28 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    setIsSending(true);
+    setEmailResponseMessage("");
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        emailConfig.SERVICE_ID,
+        emailConfig.TEMPLATE_ID,
         e.target,
-        "YOUR_PUBLIC_KEY"
+        emailConfig.PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
+          setEmailResponseMessage("Message Sent Successfully");
           clearState();
         },
         (error) => {
           console.log(error.text);
+          setEmailResponseMessage("Error Sending Message. Try Again Later.");
         }
-      );
+      )
+      .finally(() => setIsSending(false));
   };
   return (
     <div>
@@ -67,6 +74,7 @@ export const Contact = (props) => {
                         placeholder="Name"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -81,6 +89,7 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -95,12 +104,30 @@ export const Contact = (props) => {
                     placeholder="Message"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                <div id="success">
+                  {emailResponseMessage && (
+                    <p
+                      style={{
+                        marginTop: "10px",
+                        color: emailResponseMessage.includes("Success")
+                          ? "green"
+                          : "red",
+                      }}
+                    >
+                      {emailResponseMessage}
+                    </p>
+                  )}
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-custom btn-lg"
+                  disabled={isSending}
+                >
+                  {isSending ? "Sending Message..." : "Send Message"}
                 </button>
               </form>
             </div>
