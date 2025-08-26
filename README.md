@@ -1,26 +1,36 @@
-# React JS Landing Page Template
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-\*\*
+## Getting Started
 
-## Description
+First, run the development server:
 
-This is a ReactJS based landing page template, fit for a startup company/service with a one page view.
-All 'visual' data can be easily modified by changing the data.json file.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Make it Yours!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 1. Preps
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### 2. Clone Files
+## Learn More
 
-After cloning the files, you will have to run `yarn` followed by `yarn start` in the CLI
+To learn more about Next.js, take a look at the following resources:
 
-### 3. Add your own data
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Change the data in the `data.json` file as well as add any images to `public/img/`
-You can also change styles by modifying the `public/css` files.
-If you need the contact form to work, you also need to create an EmailJS account, and modify the `src/components/contact.jsx` file to replace your own service ID, template ID and Public Key
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-##### GraamSoft kattan
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
