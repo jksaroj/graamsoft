@@ -1,12 +1,11 @@
 // components/Hero.js
-'use client';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ data }) {
   return (
     <section className=" py-25 px-6 md:px-12 flex justify-center items-center overflow-hidden">
-       
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center relative">
         {/* Left Content */}
         <motion.div
@@ -15,24 +14,19 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
+          <Image
+            src="/images/bg1.png"
+            alt="bg"
+            width={200}
+            height={200}
+            className="object-cover absolute   top-20 -left-32"
+          />
 
-<Image
-              src="/images/bg1.png"
-              alt="bg"
-              width={200}
-              height={200}
-              className="object-cover absolute   top-20 -left-32"
-            />
-
-
-
-          <div className="text-4xl md:text-5xl font-bold text-gray-800">
-        
-          <div className='smallTitle'> \ We Are Here \ </div>
-          </div>
-          <p className="h2">
-          Better Insights For <br />  Business Growth
-          </p>
+          {/* <div className="text-4xl md:text-5xl font-bold text-gray-800">
+            <div className="smallTitle"> \ We Are Here \ </div>
+          </div> */}
+          <p className="h2">{data.tagline}</p>
+          <p>{data.homepaheSubheading}</p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

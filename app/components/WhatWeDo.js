@@ -1,11 +1,11 @@
 // components/WhatWeDo.js
-'use client';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function WhatWeDo() {
+export default function WhatWeDo({ data }) {
   return (
-    <section className="py-20 px-6 md:px-12 bg-[#f7f7f7]">
+    <section id="WhatWeDo" className="py-20 px-6 md:px-12 bg-[#f7f7f7]">
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Image */}
         <motion.div
@@ -14,13 +14,18 @@ export default function WhatWeDo() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
           className="rounded-lg overflow-hidden shadow-xl order-2 md:order-1"
-        > <Image
-        src="/images/profile-placeholder.jpg"
-        alt="Business Team"
-        width={600}
-        height={400}
-        className="w-full h-auto object-cover"
-      />
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            Our Story
+          </h2>
+          <br />
+          <Image
+            src="/images/profile-placeholder.jpg"
+            alt="Business Team"
+            width={600}
+            height={400}
+            className="w-full h-auto object-cover"
+          />
         </motion.div>
 
         {/* Right Content */}
@@ -31,21 +36,26 @@ export default function WhatWeDo() {
           transition={{ duration: 0.7 }}
           className="space-y-6 order-1 md:order-2"
         >
-          <div class="smallTitle"> \ What We Do \ </div>
+          <div className="smallTitle"> \ {data.title} \ </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             We Develop Product That People Love to Use
           </h2>
-          <p className="text-gray-600">
-            Our user-centered design approach ensures that we create products that are not only functional but also
-            delightful to use. We focus on solving real problems for real people.
-          </p>
-          <motion.button
+          <p className="text-gray-600">{data.para_1}</p>
+          <p className="text-gray-600">{data.para_2}</p>
+          <p className="text-gray-600">{data.points_title}</p>
+          <ul>
+            {data.points_detail.map((item, index) => (
+              <li key={index}>- {item}</li>
+            ))}
+          </ul>
+          <p className="text-grey-600">{data.what_we_do_footer}</p>
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-[#FF3E54] text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300"
           >
             View More
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
     </section>

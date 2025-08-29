@@ -1,11 +1,11 @@
 // components/About.js
-'use client';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function About() {
+export default function About({ data }) {
   return (
-    <section id="about" className="py-20 px-6 md:px-12 bg-[#F7F7F7]">
+    <section id="About" className="py-20 px-6 md:px-12 bg-[#F7F7F7]">
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Image */}
         <motion.div
@@ -15,6 +15,10 @@ export default function About() {
           transition={{ duration: 0.7 }}
           className="rounded-lg overflow-hidden shadow-xl"
         >
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            About us
+          </h2>
+          <br />
           <Image
             src="/images/profile-placeholder.jpg"
             alt="Business Team"
@@ -32,14 +36,14 @@ export default function About() {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-           <div className='smallTitle'> \ We Are Here \ </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            One of the Fastest Way to Business Growth
-          </h2>
-          <p className="text-gray-600">
-            Our proven strategies and innovative approaches have helped countless businesses achieve remarkable growth.
-            We combine data analytics with industry expertise to deliver actionable insights that drive results.
-          </p>
+          <div className="smallTitle"> \ {data.about_title} \ </div>
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            {data.about_title}
+          </h2> */}
+          <p className="text-gray-600">{data.paragraph}</p>
+          <p className="text-gray-600">{data.about_para_1}</p>
+          <p className="text-gray-600">{data.about_para_2}</p>
+          <p className="text-gray-600">{data.about_para_3}</p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

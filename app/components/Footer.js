@@ -1,15 +1,15 @@
 // components/Footer.js
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const services = [
-    'Web Design/Development',
-    'UI/UX Design',
-    'Website Migration',
-    'App Development',
-    'HubSpot Integrations',
-    'Email Marketing'
+    "Web Design/Development",
+    "UI/UX Design",
+    "Website Migration",
+    "App Development",
+    "HubSpot Integrations",
+    "Email Marketing",
   ];
 
   return (
@@ -23,22 +23,25 @@ export default function Footer() {
           transition={{ duration: 0.5 }}
         >
           <div className="w-32 h-10 bg-gray-800 rounded flex items-center justify-center mb-6">
-            <span className="font-bold text-xl">Graamsft</span>
+            <span className="font-bold text-xl">GraamSoft</span>
           </div>
           <p className="text-gray-400 mb-6">
-            We provide data-driven insights and innovative solutions to help businesses reach their full potential.
+            We provide data-driven insights and innovative solutions to help
+            businesses reach their full potential.
           </p>
           <div className="flex space-x-4">
-            {['facebook', 'twitter', 'linkedin', 'instagram'].map((platform) => (
-              <a
-                key={platform}
-                href="#"
-                className="bg-gray-800 p-2 rounded-full hover:bg-[#FF3E54] transition-colors duration-300"
-              >
-                <span className="sr-only">{platform}</span>
-                <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
-              </a>
-            ))}
+            {["facebook", "twitter", "linkedin", "instagram"].map(
+              (platform) => (
+                <a
+                  key={platform}
+                  href="#"
+                  className="bg-gray-800 p-2 rounded-full hover:bg-[#FF3E54] transition-colors duration-300"
+                >
+                  <span className="sr-only">{platform}</span>
+                  <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
+                </a>
+              )
+            )}
           </div>
         </motion.div>
 
@@ -54,7 +57,10 @@ export default function Footer() {
           <ul className="space-y-3">
             {services.map((service, index) => (
               <li key={index}>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   {service}
                 </a>
               </li>

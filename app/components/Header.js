@@ -1,6 +1,6 @@
-'use client';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,22 +19,30 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuItems = ['Home', 'About Us', 'Services', 'Portfolio', 'Blog', 'Contact'];
+  const menuItems = [
+    "Home",
+    "About",
+    "WhatWeDo",
+    "Services",
+    "Testimonials",
+    "Contact",
+  ];
 
   return (
-    <header className={`sticky top-0 w-full z-50 bg-white transition-colors duration-300  py-4 px-6 md:px-12 
+    <header
+      className={`sticky top-0 w-full z-50 bg-white transition-colors duration-300  py-4 px-6 md:px-12 
         ${isScrolled ? "shadow-md" : ""}`}
-  >
+    >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className=" rounded flex items-center justify-center">
-        <Image
-              src="/images/logo.svg"
-              alt="10go"
-              width={200}
-              height={60}
-              className="object-cover"
-            />
+          <Image
+            src="/images/logo.svg"
+            alt="10go"
+            width={200}
+            height={60}
+            className="object-cover"
+          />
         </div>
 
         {/* Desktop Navigation */}
@@ -42,7 +50,7 @@ function Header() {
           {menuItems.map((item) => (
             <a
               key={item}
-              href="#"
+              href={`#${item}`}
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
             >
               {item}
@@ -71,7 +79,9 @@ function Header() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>

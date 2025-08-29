@@ -1,0 +1,267 @@
+{
+  "Header": {
+    "tagline": "Deploy Artificial Intelligence to Scale Your Business",
+    "title": "Deploy Artificial Intelligence to Scale Your Business",
+    "homepaheSubheading": "Struggling with CRM optimization, inefficient leads or delayed IT support? Our AI-powered smart software delivers it all and provides the intelligent insights you need to empower your business, while also building real opportunities for rural India."
+  },
+  "WhatWeDo": {
+    "title": "A Share for Villages. A Solution for You.",
+    "para_1": "The word 'Graam' comes from 'village', which represents our strong cultural roots and down to earth approach towards building the future. We are all about people– our customers and the villages, long forgotten in the chase for progress– they are at the heart of our business. 'Soft' has been coined from 'Software', the core of our services.",
+    "para_2": "At GraamSoft, we code for a cause. The more we are driving towards automation, people are getting left behind– and that’s not because of lack of talent, but lack of access. While businesses struggle with delayed IT processes, the rural youth suffers from lack of exposure and training. With an aim to hit both these targets, GraamSoft was born out of the belief that intelligent software can—and should—create equally intelligent opportunities for all.",
+    "points_title": "From day one, we pledged to make GraamSoft an AI model with a conscience:",
+    "points_detail": [
+      "1% of our business shares are dedicated to village upliftment initiatives",
+      "We actively hire and train rural talent, unlocking pathways to sustainable careers in tech"
+    ],
+    "what_we_do_footer": "Our clients receive top-tier, AI-powered software solutions—while knowing they’re contributing to something larger."
+  },
+  "About": {
+    "heading": "How Do We Help?",
+    "paragraph": "We provide end-to-end business support, from building a robust online presence with user-friendly websites to streamlining internal processes and guaranteeing protection against cyber threats, while offering a comprehensive range of IT support & consultation services.",
+    "Why": [
+      "AI-Powered CRM (Flagship Product)",
+      "Personalized Software Development",
+      "Website Design & Development"
+    ],
+    "Why2": [
+      "Mobile App Development",
+      "Cloud & Cybersecurity Solutions",
+      "IT Support & Consulting"
+    ],
+    "about_title": "Who We Are and What We Believe",
+    "about_para_1": "At GraamSoft, we believe that technology shouldn't just drive businesses—it should serve lives. More than just an AI-driven IT support company, we are a movement to bridge the gap between cutting-edge technology and underserved rural communities.",
+    "about_para_2": "Unlike firms that deploy off-the-shelf tools, we’ve built our own AI CRM—giving clients tailored performance and faster innovation, backed by managed IT services. This means deep expertise and control over the technology, allowing for greater customization, faster innovation and a more seamless integration of AI into the CRM experience. This is complemented by our comprehensive IT consulting services providing a holistic digital transformation partner.",
+    "about_para_3": "Our vision is closely linked with our desire to provide oxygen to innovation, energy to change the rural sector and to further human progress every day. We write code that drives business and empowers communities—because we believe the best tech uplifts everyone it touches."
+  },
+  "Business": [
+    {
+      "title": "Businesses We Cater To",
+      "text": "Whether you're a startup seeking speed or an enterprise seeking scale, GraamSoft is your full-service IT partner—with a purpose. We cater to all industries, including but not limited to retail, healthcare, education, finance and manufacturing; and we do not let international boundaries keep us from delivering best solutions to complex business issues. When you choose us, you're not just adopting smart software, you're joining a mission to build something extraordinary—for your business and for Bharat",
+      "footer": "Driven by Innovation. Defined by Purpose."
+    }
+  ],
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": {
+    "service_tagline": "We build tech with heart—transforming lives, and not just processes!",
+    "service_header": "GraamSoft was founded with a vision to empower businesses and uplift rural India. For this reason, we give gifted young people in rural areas career pathways so they can succeed. We:",
+    "paragraph": "GraamSoft represents advancement—not just for our clients, but for communities often left behind."
+  },
+  "Service_list": [
+    {
+      "icon": "fa fa-wordpress",
+      "text": "Dedicate 1% of business profits to village development"
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "text": "Provide comprehensive IT support for businesses of all sizes"
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "text": "Actively hire and train tech talent in rural areas"
+    },
+    {
+      "icon": "fa fa-language",
+      "text": "Blend cutting-edge software with grassroots empowerment"
+    }
+  ],
+  "Core_services": [
+    {
+      "title": "AI-Powered CRM (Flagship Product)",
+      "icon": "/images/p1.svg",
+      "text": "Our in-house CRM not just helps with tracking, it enables shorten sales cycles by offering accurate lead engagement– identifying hot leads, engagement strategies and prioritizes personalized interactions."
+    },
+    {
+      "title": "Custom Software Development",
+      "icon": "/images/p1.svg",
+      "text": "At GraamSoft, it’s never just about delivering software, it’s more about building a purpose-driven platform that speaks for your business and customer loyalty. With an interactive front-end interface, we ensure security & scalability."
+    },
+    {
+      "title": "Website Design & Development ",
+      "icon": "/images/p1.svg",
+      "text": "We deliver only high-performance, responsive websites that are 100% user-friendly and accelerate your visitors into customers. Customized for your business, each segment speaks of SEO and your high-end services."
+    },
+    {
+      "title": "Mobile App Development (iOS & Android)",
+      "icon": "/images/p1.svg",
+      "text": "We understand that mobile applications are the first point of contact for your customers, so, we make them high performing and functional with a user-friendly interface. We take care of the complete app lifecycle from UI/UX to deployment."
+    },
+    {
+      "title": "IT Consulting & Strategy",
+      "icon": "/images/p1.svg",
+      "text": "We guarantee maximized performance and productivity with quick resolutions, minimum troubleshooting and decreased downtime. Our quick IT help desk solutions simplify technical help as if it was never required in the first place."
+    },
+    {
+      "title": "Cloud Solutions",
+      "icon": "/images/p1.svg",
+      "text": "We enhance your cloud computing with faster scalability and smarter operations. The cloud architectures are customized for resilience, security and cost-effectiveness (IaaS, SaaS, PaaS)?."
+    },
+    {
+      "title": "Cybersecurity Services",
+      "icon": "/images/p1.svg",
+      "text": "We ensure your peace of mind with 24x7 security services so that you get a soundful sleep. Threat detection, firewall management, data security & encryption are only a few among the range of services we provide to protect you digitally."
+    },
+    {
+      "title": "Data Management & Analytics",
+      "icon": "/images/p1.svg",
+      "text": "Data is king and we treat yours no less than a royalty. We help businesses store, manage and analyze data for valuable insights and maximum functionality to drive business growth."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "We needed a website that reflected both our modern tech and rooted cause, and GraamSoft delivered that. They understood nour vision and outlined it beautifully.",
+      "name": "Farhan, Wellness Startup, Mumbai"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "Our app went from being an idea to the Play Store in less than 10 weeks, thanks to GraamSoft. The user interface works smoothly and we have over 10,000 downloads already!",
+      "name": "Ravi, Co-founder (Pharma), Pune"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "With GraamSoft, we were able to go from square one to launch in less than three months. Their AI CRM increased our sales team's productivity by 10x, we’re looking forward to their IT support next!",
+      "name": "Raghav, SaaS Startup, Hyderabad"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "This tech feels straight out of the year 2050! We gained insights from GraamSoft CRM that our previous system completely missed.",
+      "name": "Sonia, Digital Growth Manager, Jaipur"
+    }
+  ],
+  "OurStory": {
+    "heading": "A Share for Villages. A Solution for You.",
+    "paragraph_1": "The word 'Graam' comes from 'village,' which represents our strong cultural roots and down to earth approach towards building the future. We are all about people– our customers and the villages, long forgotten in the chase for progress– they are at the heart of our business. 'Soft' has been coined from 'Software,' the core of our services.",
+    "paragraph_2": "At GraamSoft, we code for a cause. The more we are driving towards automation, people are getting left behind– and that’s not because of lack of talent, but lack of access. While businesses struggle with delayed IT processes, the rural youth suffers from lack of exposure and training. With an aim to hit both these targets, GraamSoft was born out of the belief that intelligent software can—and should—create equally intelligent opportunities for all.",
+    "paragraph_3": "From day one, we pledged to make GraamSoft an AI model with a conscience:",
+    "story_points": [
+      "1% of our business shares are dedicated to village upliftment initiatives",
+      "We actively hire and train rural talent, unlocking pathways to sustainable careers in tech"
+    ],
+    "paragraph_4": "Our clients receive top-tier, AI-powered software solutions—while knowing they’re contributing to something larger"
+  },
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "title": "Ready to Transform?",
+    "tagline": "Smart software, social impact—both begin with one conversation.",
+    "title_2": "Our Promise of Responsible AI at GraamSoft",
+    "para_1": "GraamSoft, as a trusted and responsible IT service company, runs on progress and purpose, without any compromise on ethical standards. We share a unique perspective on the practical implications of Artificial Intelligence. Our commitment towards staying at the forefront of rural upliftment and digital advancement is evident from our ever-renewing investments in AI best practices and secure training of our AI models.",
+    "para_2": "We recognize that AI is “more than algorithms and models” and are committed to upleveling and strengthening the skills of our employees who enable and develop AI solutions.",
+    "para_3": "We use our data expertise and solutions to help our enterprise customers to implement and derive benefits from AI at scale to achieve specific business outcomes. In doing so, we are committed to adopting a risk-based approach to AI deployment and development by identifying, evaluating and mitigating risks across AI-Applications lifecycle.",
+    "address": "Gurugram, Haryana",
+    "address_2": "India, 122002",
+    "phone": "+91 99718 15647",
+    "email": "info@graamsoft.com",
+    "facebook": "fb.com/graamsoft",
+    "twitter": "twitter.com/graamsoft",
+    "youtube": "youtube.com/graamsoft",
+    "social_media": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/graamsoft",
+        "color": "#1877F2",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'><path d='M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.63-1.3 1.27V12h2.2l-.35 3h-1.85v7A10 10 0 0 0 22 12'/></svg>"
+      },
+      {
+        "name": "twitter",
+        "url": "https://www.twitter.com/graamsoft",
+        "color": "#1DA1F2",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'><path d='M19.5 7.5c.01.2.01.4.01.61 0 6.21-4.73 13.37-13.37 13.37-2.66 0-5.14-.78-7.23-2.14.37.04.74.07 1.12.07 2.21 0 4.25-.75 5.86-2.02-2.07-.04-3.82-1.4-4.42-3.27.29.06.59.1.9.1.43 0 .85-.06 1.25-.17-2.15-.43-3.78-2.33-3.78-4.6v-.06c.64.36 1.37.58 2.15.61a4.6 4.6 0 0 1-2.05-3.82c0-.85.23-1.64.64-2.33 2.33 2.86 5.82 4.74 9.75 4.94-.08-.34-.12-.7-.12-1.06a4.6 4.6 0 0 1 4.6-4.6c1.32 0 2.51.56 3.34 1.46a9.06 9.06 0 0 0 2.92-1.12 4.6 4.6 0 0 1-2.02 2.54 9.23 9.23 0 0 0 2.64-.73 9.94 9.94 0 0 1-2.29 2.37'/></svg>"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/graamsoft",
+        "color": "#FF0000",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'><path d='M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16 5 12 5 12 5h0s-4 0-7 .1c-.4 0-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6C2 14.4 2.2 16 2.2 16s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.8.1 6.8.1s4 0 7-.1c.4 0 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 14.7V9.3l5.2 2.7-5.2 2.7z'/></svg>"
+      }
+    ]
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
