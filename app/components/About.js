@@ -15,10 +15,8 @@ export default function About({ data }) {
           transition={{ duration: 0.7 }}
           className="rounded-lg overflow-hidden shadow-xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            About us
-          </h2>
-          <br />
+         
+        
           <Image
             src="/images/profile-placeholder.jpg"
             alt="Business Team"
@@ -36,7 +34,8 @@ export default function About({ data }) {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-          <div className="smallTitle"> \ {data.about_title} \ </div>
+          <div className="smallTitle"> \ About us \ </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800">{data.about_title}</h2>
           {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             {data.about_title}
           </h2> */}

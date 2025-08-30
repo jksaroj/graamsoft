@@ -7,38 +7,27 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Testimonials({ data }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // const testimonials = [
-  //   {
-  //     name: "Robert Williams",
-  //     company: "Tech Innovations Inc.",
-  //     text: "Working with Graamsft has transformed our business. Their insights helped us increase revenue by 40% in just six months.",
-  //     avatar: "/testimonial-1.jpg",
-  //   },
-  //   {
-  //     name: "Jennifer Lopez",
-  //     company: "Global Solutions Ltd.",
-  //     text: "The team at Graamsft truly understands business growth. Their strategies are innovative and effective.",
-  //     avatar: "/testimonial-2.jpg",
-  //   },
-  //   {
-  //     name: "David Chen",
-  //     company: "NextGen Technologies",
-  //     text: "We were impressed by their data-driven approach. The results speak for themselves - our customer engagement has doubled.",
-  //     avatar: "/testimonial-3.jpg",
-  //   },
-  // ];
+  const cardsToShow = 3; // ✅ show 3 at a time
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? 0 : prevIndex + 1
+      prevIndex + cardsToShow >= data.length ? 0 : prevIndex + cardsToShow
     );
   };
 
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      prevIndex - cardsToShow < 0
+        ? Math.max(0, data.length - cardsToShow)
+        : prevIndex - cardsToShow
     );
   };
+
+  // ✅ slice 3 cards
+  const visibleTestimonials = data.slice(
+    currentIndex,
+    currentIndex + cardsToShow
+  );
 
   return (
     <section id="Testimonials" className="py-20 px-6 md:px-12 bg-white">
@@ -53,36 +42,40 @@ export default function Testimonials({ data }) {
           Testimonials
         </motion.h2>
 
-        <div className="max-w-4xl mx-auto relative">
+        <div className="container mx-auto relative">
           <AnimatePresence mode="wait">
-            {data.map((d, index) => (
-              <motion.div
-                key={index + 1}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5 }}
-                className="bg-white p-8 md:p-12 rounded-xl shadow-md text-center"
-              >
-                <div className="relative w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
-                  <Image
-                    // src={d.img}
-                    alt={d.name}
-                    fill
-                    className="object-cover"
-                  />
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+              className="grid gap-6 md:grid-cols-3"
+            >
+              {visibleTestimonials.map((d, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 md:p-8 rounded-xl shadow-md text-center"
+                >
+                  <div className="relative w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
+                    <Image
+                      src={d.avatar}
+                      alt={d.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-600 text-lg italic mb-6">{d.text}</p>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {d.name}
+                  </h3>
+                  <p className="text-blue-600">{d.company}</p>
                 </div>
-                <p className="text-gray-600 text-lg italic mb-6">{d.text}</p>
-                {/* <h3 className="text-xl font-semibold text-gray-800">
-                  {testimonials[currentIndex].name}
-                </h3> */}
-                {/* <p className="text-blue-600">
-                  {testimonials[currentIndex].company}
-                </p> */}
-              </motion.div>
-            ))}
+              ))}
+            </motion.div>
           </AnimatePresence>
 
+          {/* Navigation buttons */}
           <div className="flex justify-center mt-8 space-x-4">
             <button
               onClick={prevTestimonial}

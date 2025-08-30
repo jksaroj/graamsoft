@@ -15,9 +15,7 @@ export default function WhatWeDo({ data }) {
           transition={{ duration: 0.7 }}
           className="rounded-lg overflow-hidden shadow-xl order-2 md:order-1"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Our Story
-          </h2>
+         
           <br />
           <Image
             src="/images/profile-placeholder.jpg"
@@ -36,9 +34,12 @@ export default function WhatWeDo({ data }) {
           transition={{ duration: 0.7 }}
           className="space-y-6 order-1 md:order-2"
         >
-          <div className="smallTitle"> \ {data.title} \ </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <div className="smallTitle"> \ Our Story \ </div>
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             We Develop Product That People Love to Use
+          </h2> */}
+           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+             {data.title}
           </h2>
           <p className="text-gray-600">{data.para_1}</p>
           <p className="text-gray-600">{data.para_2}</p>
