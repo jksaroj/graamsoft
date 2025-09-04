@@ -239,9 +239,7 @@ export default function Contact({ data }) {
           </div>
 
           <div className="pt-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">
-              Follow Us
-            </h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <div className="flex space-x-4">
                 {data.social_media.map((item) => (

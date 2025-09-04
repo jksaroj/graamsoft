@@ -37,7 +37,7 @@ export default function Testimonials({ data }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16"
+          className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2"
         >
           Testimonials
         </motion.h2>
@@ -57,14 +57,14 @@ export default function Testimonials({ data }) {
                   key={index}
                   className="bg-white p-6 md:p-8 rounded-xl shadow-md text-center"
                 >
-                  <div className="relative w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
+                  {/* <div className="relative w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
                     <Image
                       src={d.avatar}
                       alt={d.name}
                       fill
                       className="object-cover"
                     />
-                  </div>
+                  </div> */}
                   <p className="text-gray-600 text-lg italic mb-6">{d.text}</p>
                   <h3 className="text-xl font-semibold text-gray-800">
                     {d.name}

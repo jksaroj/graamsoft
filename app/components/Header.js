@@ -6,6 +6,13 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -48,13 +55,13 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {menuItems.map((item) => (
-            <a
+            <li
               key={item}
-              href={`#${item}`}
+              onClick={() => scrollToSection(item)}
               className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
             >
               {item}
-            </a>
+            </li>
           ))}
           {/* <button
             className="bg-[#FF3E54] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"

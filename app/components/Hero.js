@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Hero({ data }) {
   return (
-    <section className=" py-25 px-6 md:px-12 flex justify-center items-center overflow-hidden">
+    <section
+      id="Home"
+      className=" py-25 px-6 md:px-12 flex justify-center items-center overflow-hidden"
+    >
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center relative">
         {/* Left Content */}
         <motion.div

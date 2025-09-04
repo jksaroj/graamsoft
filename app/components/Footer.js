@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   const services = [
-    "Web Design/Development",
-    "UI/UX Design",
-    "Website Migration",
-    "App Development",
-    "HubSpot Integrations",
-    "Email Marketing",
+    "AI-Powered CRM (Flagship Product)",
+    "Custom Software Development",
+    "Website Design & Development",
+    "Mobile App Development (iOS & Android)",
+    "IT Consulting & Strategy",
+    "Cloud Solutions",
+    "Cybersecurity Services",
+    "Data Management & Analytics",
   ];
 
   return (
@@ -56,14 +58,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-6">Services</h3>
           <ul className="space-y-3">
             {services.map((service, index) => (
-              <li key={index}>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  {service}
-                </a>
-              </li>
+              <li key={index}>{service}</li>
             ))}
           </ul>
         </motion.div>
@@ -79,12 +74,12 @@ export default function Footer() {
           <p className="text-gray-400 mb-6">
             Join our team of experts and help us transform businesses.
           </p>
-          <a
+          {/* <a
             href="#"
             className="inline-block bg-[#FF3E54] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300 mb-8"
           >
             View Openings
-          </a>
+          </a> */}
 
           <h3 className="text-lg font-semibold mb-4">Subscribe</h3>
           <p className="text-gray-400 mb-4">
@@ -107,7 +102,7 @@ export default function Footer() {
       </div>
 
       <div className="container mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Graamsft. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} GraamSoft. All rights reserved.</p>
       </div>
     </footer>
   );
