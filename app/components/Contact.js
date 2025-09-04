@@ -3,6 +3,19 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+
+const icons = {
+  facebook: <FaFacebookF />,
+  twitter: <FaTwitter />,
+  linkedin: <FaLinkedinIn />,
+  instagram: <FaInstagram />,
+};
 
 export default function Contact({ data }) {
   const [formData, setFormData] = useState({
@@ -242,20 +255,20 @@ export default function Contact({ data }) {
             <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               <div className="flex space-x-4">
-                {data.social_media.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full transition-colors duration-300"
-                    style={{
-                      backgroundColor: item.color + "20",
-                      color: item.color,
-                    }}
-                    dangerouslySetInnerHTML={{ __html: item.svg }}
-                  />
-                ))}
+                {["facebook", "twitter", "linkedin", "instagram"].map(
+                  (platform) => (
+                    <a
+                      key={platform}
+                      href="#"
+                      className="bg-gray-800 p-2 rounded-full hover:bg-[#FF3E54] transition-colors duration-300"
+                    >
+                      <span className="sr-only">{platform}</span>
+                      <div className="w-5 h-5 text-white">
+                        {icons[platform]}
+                      </div>
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>

@@ -1,7 +1,19 @@
 // components/Footer.js
 "use client";
 import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 
+const icons = {
+  facebook: <FaFacebookF />,
+  twitter: <FaTwitter />,
+  linkedin: <FaLinkedinIn />,
+  instagram: <FaInstagram />,
+};
 export default function Footer() {
   const services = [
     "AI-Powered CRM (Flagship Product)",
@@ -40,7 +52,7 @@ export default function Footer() {
                   className="bg-gray-800 p-2 rounded-full hover:bg-[#FF3E54] transition-colors duration-300"
                 >
                   <span className="sr-only">{platform}</span>
-                  <div className="w-5 h-5 bg-gray-400 rounded-full"></div>
+                  <div className="w-5 h-5 text-white">{icons[platform]}</div>
                 </a>
               )
             )}
