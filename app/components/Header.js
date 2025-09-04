@@ -53,12 +53,12 @@ function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8 list-none">
           {menuItems.map((item) => (
             <li
               key={item}
               onClick={() => scrollToSection(item)}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+              className="text-gray-600 hover:text-white visited:text-white duration-300 cursor-pointer hover:bg-[#0e1f51] p-2 rounded"
             >
               {item}
             </li>
