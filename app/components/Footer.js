@@ -1,6 +1,8 @@
 // components/Footer.js
 "use client";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   FaFacebookF,
   FaTwitter,
@@ -15,6 +17,9 @@ const icons = {
   instagram: <FaInstagram />,
 };
 export default function Footer() {
+  const [formData, setFormData] = useState({
+    email: "",
+  });
   const services = [
     "AI-Powered CRM (Flagship Product)",
     "Custom Software Development",
@@ -25,6 +30,43 @@ export default function Footer() {
     "Cybersecurity Services",
     "Data Management & Analytics",
   ];
+
+  const [isSending, setIsSending] = useState(false);
+  const [feedback, setFeedback] = useState({ message: "", type: "" });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    setFeedback({ message: "", type: "" });
+    console.log(formData);
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SUBSCRIPTION_TEMPLATE_ID,
+        {
+          from_email: formData.email,
+          message: "Subscription email: " + formData.email,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      );
+
+      setFeedback({ message: "Successfully subscribed!", type: "success" });
+      setFormData({ email: "" });
+    } catch (error) {
+      console.log(error);
+      setFeedback({
+        message: "Failed to send message. Please try again.",
+        type: "error",
+      });
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 md:px-12">
@@ -97,19 +139,36 @@ export default function Footer() {
           <p className="text-gray-400 mb-4">
             Stay updated with our latest news and insights.
           </p>
-          <form className="flex">
+          <form className="flex" onSubmit={handleSubmit}>
             <input
               type="email"
+              id="email"
+              name="email"
               placeholder="Your email"
-              className="px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 w-full"
+              onChange={handleChange}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              required
             />
+            <br />
             <button
               type="submit"
+              disabled={isSending}
               className="bg-[#FF3E54] px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors duration-300"
             >
-              Subscribe
+              {isSending ? "Processing..." : "Subscribe"}
             </button>
           </form>
+          {feedback.message && (
+            <div
+              className={`text-sm font-medium px-4 py-3 my-5 rounded ${
+                feedback.type === "success"
+                  ? "bg-green-100 text-green-700"
+                  : "bg-red-100 text-red-700"
+              }`}
+            >
+              {feedback.message}
+            </div>
+          )}
         </motion.div>
       </div>
 
